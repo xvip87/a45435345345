@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<plugin>
+        <name>aflexPlugin</name>
+    <creationDate>2012-11-28</creationDate>
+    <author>tuannv</author>
+    <authorEmail>tuannv@adflex.vn</authorEmail>
+    <authorUrl>adflex.vn</authorUrl>
+    <license>GPL</license>
+    <description>this is plugin customize admin adflex</description>
+    <version>0.0.1-dev</version>
+    <oxversion>2.8.10</oxversion>
+    <type>package</type>
+
+    <install>
+
+        <files>
+            <file path="{PLUGINPATH}">aflexPlugin.readme.txt</file>
+        </files>
+
+        <!-- list the groups that are contained in this plugin -->
+        <!-- in the order they should be installed -->
+        <contents>
+            <group name="adflexAdmin">0</group>
+            <group name="adflexReport">1</group>
+
+        </contents>
+        <navigation>
+<!--            <admin>
+                <menu index="apsg-global" insertafter="2.2" link="plugins/apStatsGraphsUI/index.php">Global History Graph</menu>
+            </admin>
+            <manager>
+                <menu index="apsg-global" insertafter="2.2" link="plugins/apStatsGraphsUI/index.php">Global History Graph</menu>
+            </manager>      -->
+        </navigation>     
+        <components>
+             <component>
+                 <name>adflexReport</name>
+             </component>
+        </components>             
+    </install>
+
+</plugin>

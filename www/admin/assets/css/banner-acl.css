@@ -1,0 +1,19 @@
+/**
+ * Stylesheet for banner-acl.php
+ **/ 
+
+/* Title */
+span.title,
+.adflex-toggle{
+    color: #333333;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 25px 10px 5px 0;
+    text-align: right;
+    font-family: Trebuchet MS;
+}
+
+.toggle-list {margin-bottom: 10px}
+
+.left-section{width:48%;float:left}
+.right-section{width:48%;float:right}
